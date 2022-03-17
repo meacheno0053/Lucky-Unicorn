@@ -29,3 +29,5 @@ print()
 
 print("starting balance: ${:.2f}".format(STARTING_BAlANCE))
 print ("final balance: ${:.2f}".format(balance))
+
+print("hello world")
