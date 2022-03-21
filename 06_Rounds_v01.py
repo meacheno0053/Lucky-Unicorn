@@ -19,4 +19,4 @@ while play_again == "":
                      "or 'xxx' to quit")
 
 print()
-print("final_balance" balance )
+print("final_balance", balance)
