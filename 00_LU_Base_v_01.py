@@ -17,10 +17,24 @@ def yes_no (question):
 
    
 
+
 def instructions ():
   print("**** How to Play ****")
   print()
-  print("The rules of the game go here")
+  print("Choose a starting amount (minimum $1, maximum $10).")
+  print()
+  
+("Then press <Enter> to play. You will get either a horse, a zebra, a donkey or a unicorn.")
+print()
+
+("It costs $1 per round. Depending on your prize you might win some of the money back. Here's the payout amounts"
+"Unicorn: $5.00 (balance increases by $4)"
+"Horse: $0.50 (balance decreases by $0.50)"
+"Zebra: $0.50 (balance decreases by $0.50)"
+"Donkey $0.00 (balance decreases by $1.00)"
+"Can you avoid the donkeys, get the unicrons and walk home with the money??"
+       "Hint: to quit while you are ahead, type 'xxx' instead of pressing <Enter>")
+
   print()
   return ""
 
@@ -46,11 +60,32 @@ def num_check(question, low, high ):
       print(error)
       
 
+
+def statement_generator(statement, decoration):
+
+  sides = decoration * 3
+
+  statement = "{} {} {}".format(sides, statement, sides)
+  top_bottom = decoration * len(statement)
+
+  print(top_bottom)
+  print(statement)
+  print(top_bottom)
+
+  return ""
+
 # ******* Main routine starts here ******
+
+statement_generator("** Welcome to the Lucky Unicorn Game **", "*")
+
+print()
 played_before = yes_no("Have you played before? ")
+print()
 
 if played_before == "no":
   instructions()
+
+print()
 
 # print("program continues")
 
