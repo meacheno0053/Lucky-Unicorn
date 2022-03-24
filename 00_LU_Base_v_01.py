@@ -24,18 +24,16 @@ def instructions ():
   print("Choose a starting amount (minimum $1, maximum $10).")
   print()
   
-("Then press <Enter> to play. You will get either a horse, a zebra, a donkey or a unicorn.")
+  ("Then press <Enter> to play. You will get either a horse, a zebra, a donkey or a unicorn.")
 print()
-
-("It costs $1 per round. Depending on your prize you might win some of the money back. Here's the payout amounts"
-"Unicorn: $5.00 (balance increases by $4)"
+("It costs $1 per round. Depending on your prize you might win some of the money back. Here's the payout amounts")
+("Unicorn: $5.00 (balance increases by $4)"
 "Horse: $0.50 (balance decreases by $0.50)"
 "Zebra: $0.50 (balance decreases by $0.50)"
 "Donkey $0.00 (balance decreases by $1.00)"
 "Can you avoid the donkeys, get the unicrons and walk home with the money??"
        "Hint: to quit while you are ahead, type 'xxx' instead of pressing <Enter>")
-
-  print()
+ print()
   return ""
 
 # checks for a number between low and high
