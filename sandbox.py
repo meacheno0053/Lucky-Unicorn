@@ -1,9 +1,9 @@
-greeting = "hello world"
-sides = "*" * 3
+greeting = "YOU GOT A ZEBRA!"
+sides = "Z" * 3
 
 greeting = "{} {} {}".format (sides, greeting, sides)
 
-top_bottom = "*" * len(greeting)
+top_bottom = "Z" * len(greeting)
 
 print(top_bottom)
 print(greeting)
