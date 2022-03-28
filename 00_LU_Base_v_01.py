@@ -27,7 +27,7 @@ def instructions ():
         "Horse: $0.50 (balance decreases by $0.50)"
          "Zebra: $0.50 (balance decreases by $0.50)"
           "Donkey $0.00 (balance decreases by $1.00)"
-         "Can you avoid the donkeys, get the unicrons and walkn home with the money??"
+         "Can you avoid the donkeys, get the unicorns and walking home with the money??"
         "Hint: to quit while you are ahead, type 'xxx' instead of pressing <Enter>")
   print()
   return ""
