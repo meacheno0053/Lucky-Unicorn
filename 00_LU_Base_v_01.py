@@ -13,17 +13,17 @@ def yes_no (question):
       return "no"
     
     else:
-      print("Please answer yes / no")
+      print("Please answer: yes / no")
 
    
 
 
 def instructions ():
-  print("**** How to Play ****")
+  print("**** How to Play: ****")
   print()
   print("""Choose a starting amount (minimum $1, maximum $10). 
 
-Then press <Enter> to play. You will get either a horse, a zebra, a donkey or a unicorn.  It costs $1 per round. Depending on your prize you might win some of the money back. Here's the payout amounts
+Then press <Enter> to play. You will get either a horse, a zebra, a donkey or a unicorn.  It costs $1 per round. Depending on your prize you might win some of the money back. Here's the payout amounts:
   Unicorn: $5.00 (balance increases by $4)
   Horse: $0.50 (balance decreases by $0.50)	
   Zebra: $0.50 (balance decreases by $0.50)
@@ -60,7 +60,7 @@ def num_check(question, low, high ):
 
 def statement_generator(statement, decoration, style):
 
-  sides = decoration * 3
+  sides = decoration * 2
 
   statement = "{} {} {}".format(sides, statement, sides)
   top_bottom = decoration * len(statement)
@@ -80,7 +80,7 @@ def statement_generator(statement, decoration, style):
 statement_generator("** Welcome to the Lucky Unicorn Game **", "*", 3)
 
 print()
-played_before = yes_no(" ?? Have you played before ??" )
+played_before = yes_no(" ?? Have you played before: ??" )
 print()
 
 if played_before == "no":
@@ -90,7 +90,7 @@ print()
 
 # print("program continues")
 
-how_much = num_check (" ++ How much would you like to play with? ++" , 0, 10 )
+how_much = num_check (" ++ How much would you like to play with?: ++" , 0, 10 )
 
 print(" -- You will be spending ${} -- ".format (how_much))
 
@@ -154,4 +154,4 @@ while play_again == "":
                       "or 'xxx' to quit")
 
 print()
-print("Final_balance $", balance)n
+print("Final_balance: $", balance)
